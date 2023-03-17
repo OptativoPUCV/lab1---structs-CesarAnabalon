@@ -640,3 +640,17 @@ exercises.c:146:24: error: expected ‘;’ before ‘sumaV’
       |   ~~~~~                 
 Compilation failed
 921d4b3
+Fri 17 Mar 2023 03:00:44 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:146:24: error: expected ‘;’ before ‘sumaV’
+  146 |   asignarValor(B,1, b2)
+      |                        ^
+      |                        ;
+  147 | 
+  148 |   sumaV(*c,*A,*B);
+      |   ~~~~~                 
+Compilation failed
+061d47a
