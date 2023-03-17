@@ -617,3 +617,26 @@ Fri 17 Mar 2023 12:28:26 PM UTC:
  tests:  7|1
 total_score: 60/70
 817af5d
+Fri 17 Mar 2023 03:00:30 PM UTC: 
+ exercises.c | 12 +++++++++---
+ 1 file changed, 9 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:145:20: error: ‘B1’ undeclared (first use in this function); did you mean ‘b1’?
+  145 |   asignarValor(B,0,B1);
+      |                    ^~
+      |                    b1
+exercises.c:145:20: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:146:21: error: ‘B2’ undeclared (first use in this function); did you mean ‘b2’?
+  146 |   asignarValor(B,1, B2)
+      |                     ^~
+      |                     b2
+exercises.c:146:24: error: expected ‘;’ before ‘sumaV’
+  146 |   asignarValor(B,1, B2)
+      |                        ^
+      |                        ;
+  147 | 
+  148 |   sumaV(*c,*A,*B);
+      |   ~~~~~                 
+Compilation failed
+921d4b3

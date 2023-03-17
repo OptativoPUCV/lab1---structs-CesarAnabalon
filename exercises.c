@@ -112,9 +112,7 @@ la cual retorna el valor en la posición i del vector v.
 */
 int obtenerValor(Vector * v, int i) {
   return v->datos[i];
-  
-  
-   return 0;
+    
 }
 
 /*
@@ -122,7 +120,8 @@ Ejercicio 7.
 Función que suma los vectores `a` y `b` y 
 actualiza el vector `c` con el resultado de la suma.
 */
-void sumaV(Vector * a, Vector * b, Vector * c) {
+void sumaV(Vector * a, Vector * b, Vector * c) 
+{
 unsigned short i = 0;
   for(i = 0; i < c->capacidad; i ++)
     {
@@ -137,7 +136,14 @@ Use las operaciones implementadas de vectores para
 sumar (a1,a2)+(b1+b2). Almacene el resultado en el vector c.
 */
 void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
-Vector *A= crearVector(2);
-asignarValor(A, 0,a1);
   
+  Vector *A= crearVector(2);
+  asignarValor(A, 0,a1);
+  asignarValor(A, 1,a2);
+
+  Vector *B = crearVector(2);
+  asignarValor(B,0,B1);
+  asignarValor(B,1, B2)
+
+  sumaV(*c,*A,*B);
 }
