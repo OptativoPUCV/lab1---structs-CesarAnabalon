@@ -133,3 +133,23 @@ exercises.c:88:6: error: ‘vector’ undeclared (first use in this function); d
 exercises.c:88:6: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 3862caf
+Fri 17 Mar 2023 11:53:34 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:87:18: error: too many arguments to function ‘malloc’
+   87 |   Vector *temp = malloc(n,sizeof(Vector));
+      |                  ^~~~~~
+In file included from test.c:2:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/stdlib.h:540:14: note: declared here
+  540 | extern void *malloc (size_t __size) __THROW __attribute_malloc__
+      |              ^~~~~~
+In file included from test.c:5:
+exercises.c:88:6: error: ‘vector’ undeclared (first use in this function); did you mean ‘Vector’?
+   88 |   if(vector == NULL) EXIT_FAILURE;
+      |      ^~~~~~
+      |      Vector
+exercises.c:88:6: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+989d99f
