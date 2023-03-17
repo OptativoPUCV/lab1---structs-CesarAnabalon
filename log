@@ -267,3 +267,22 @@ exercises.c:92:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 154ba3b
+Fri 17 Mar 2023 11:55:24 AM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:88:15: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+   88 |   Vector *temp->datos = (Vector*)malloc(sizeof(Vector));
+      |               ^~
+exercises.c:88:15: error: expected expression before ‘->’ token
+exercises.c:90:7: error: ‘temp’ undeclared (first use in this function)
+   90 |   if(*temp == NULL) exit(1);
+      |       ^~~~
+exercises.c:90:7: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:93:1: error: control reaches end of non-void function [-Werror=return-type]
+   93 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+d4097df
