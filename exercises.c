@@ -146,5 +146,4 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
   asignarValor(B,1, b2);
   sumaV(A,B,c);
 
-  return 0;
 }
