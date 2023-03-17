@@ -456,3 +456,13 @@ exercises.c:104:3: error: ‘vector’ undeclared (first use in this function); 
 exercises.c:104:3: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 a055aa8
+Fri 17 Mar 2023 12:07:49 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:104:7: error: invalid type argument of ‘->’ (have ‘Vector’)
+  104 |   v[i]->datos = valor;
+      |       ^~
+Compilation failed
+e0e3352
