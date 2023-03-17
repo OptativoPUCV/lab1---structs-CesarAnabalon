@@ -316,3 +316,9 @@ exercises.c:88:34: error: invalid operands to binary * (have ‘Vector *’ and 
       |                  Vector *           long unsigned int
 Compilation failed
 2146c5e
+Fri 17 Mar 2023 11:56:23 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  3|4
+total_score: 30/70
+88698ac
