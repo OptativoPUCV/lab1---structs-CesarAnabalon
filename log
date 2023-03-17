@@ -338,3 +338,9 @@ exercises.c:88:33: error: expected expression before ‘Vector’
       |                                 ^~~~~~
 Compilation failed
 2f10417
+Fri 17 Mar 2023 11:58:04 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  3|4
+total_score: 30/70
+add6c4d
