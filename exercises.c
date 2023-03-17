@@ -84,6 +84,10 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
+  Vector *temp = calloc(n,sizeof(Vector));
+  
+  
+  
    return NULL;
 }
 
