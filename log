@@ -493,3 +493,14 @@ exercises.c:104:17: error: invalid type argument of unary ‘*’ (have ‘int�
       |                 ^~~~~~
 Compilation failed
 72245b8
+Fri 17 Mar 2023 12:08:51 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:104:15: error: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Werror=int-conversion]
+  104 |   v->datos[i] = &valor;
+      |               ^
+cc1: all warnings being treated as errors
+Compilation failed
+e7f2c44
