@@ -85,7 +85,7 @@ typedef struct {
 
 Vector * crearVector(int n) {
   Vector *temp = malloc(n*sizeof(Vector));
-  if(vector == NULL) EXIT_FAILURE;
+  if(*temp == NULL) EXIT_FAILURE;
   
    return temp;
 }

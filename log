@@ -165,3 +165,15 @@ exercises.c:88:6: error: ‘vector’ undeclared (first use in this function); d
 exercises.c:88:6: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 92d642b
+Fri 17 Mar 2023 11:53:50 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:88:12: error: invalid operands to binary == (have ‘Vector’ and ‘void *’)
+   88 |   if(*temp == NULL) EXIT_FAILURE;
+      |      ~~~~~ ^~
+      |      |
+      |      Vector
+Compilation failed
+7d9e715
