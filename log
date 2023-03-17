@@ -611,3 +611,9 @@ exercises.c:102:28: note: expected ‘Vector *’ but argument is of type ‘Vec
 cc1: all warnings being treated as errors
 Compilation failed
 63f56b7
+Fri 17 Mar 2023 12:28:26 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  7|1
+total_score: 60/70
+817af5d
