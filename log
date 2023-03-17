@@ -328,3 +328,13 @@ Fri 17 Mar 2023 11:56:42 AM UTC:
  tests:  3|4
 total_score: 30/70
 5a62db6
+Fri 17 Mar 2023 11:57:40 AM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:88:33: error: expected expression before ‘Vector’
+   88 |   Vector *temp = malloc(sizeof(*Vector));
+      |                                 ^~~~~~
+Compilation failed
+2f10417
