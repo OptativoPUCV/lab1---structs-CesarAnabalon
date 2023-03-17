@@ -595,3 +595,19 @@ exercises.c:102:28: note: expected ‘Vector *’ but argument is of type ‘Vec
       |                   ~~~~~~~~~^
 Compilation failed
 8d25adb
+Fri 17 Mar 2023 12:28:20 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:141:14: error: passing argument 1 of ‘asignarValor’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  141 | asignarValor(&A, 0,a1);
+      |              ^~
+      |              |
+      |              Vector **
+exercises.c:102:28: note: expected ‘Vector *’ but argument is of type ‘Vector **’
+  102 | void asignarValor(Vector * v, int i, int valor) {
+      |                   ~~~~~~~~~^
+cc1: all warnings being treated as errors
+Compilation failed
+63f56b7
