@@ -84,8 +84,7 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-  Vector *temp = calloc(n,sizeof(Vector));
-  
+  Vector *temp = malloc(n,sizeof(Vector));
   
   
    return temp;
@@ -120,6 +119,8 @@ actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) {
 
+  for(short i = 0;)
+  
 }
 
 /*
