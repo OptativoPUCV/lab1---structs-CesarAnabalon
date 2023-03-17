@@ -304,3 +304,15 @@ Fri 17 Mar 2023 11:55:37 AM UTC:
  tests:  3|4
 total_score: 30/70
 fa4fe18
+Fri 17 Mar 2023 11:56:16 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:88:34: error: invalid operands to binary * (have ‘Vector *’ and ‘long unsigned int’)
+   88 |   Vector *temp = (Vector*) malloc*(n*sizeof(Vector));
+      |                  ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+      |                  |                  |
+      |                  Vector *           long unsigned int
+Compilation failed
+2146c5e
