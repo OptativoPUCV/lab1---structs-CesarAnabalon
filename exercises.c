@@ -85,7 +85,7 @@ typedef struct {
 
 Vector * crearVector(int n) {
   
-  Vector *temp = calloc(sizeof(n,sizeof(*temp));
+  Vector *temp = calloc(sizeof(n,sizeof(Vector));
   
   
   if(temp == NULL) exit(1);

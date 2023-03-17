@@ -387,3 +387,44 @@ test.c:251:5: error: ‘main’ defined but not used [-Werror=unused-function]
 cc1: all warnings being treated as errors
 Compilation failed
 542cf1b
+Fri 17 Mar 2023 12:01:19 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:88:33: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+   88 |   Vector *temp = calloc(sizeof(n,sizeof(Vector));
+      |                                 ^
+exercises.c:88:49: error: expected ‘)’ before ‘;’ token
+   88 |   Vector *temp = calloc(sizeof(n,sizeof(Vector));
+      |                        ~                        ^
+      |                                                 )
+exercises.c:88:18: error: too few arguments to function ‘calloc’
+   88 |   Vector *temp = calloc(sizeof(n,sizeof(Vector));
+      |                  ^~~~~~
+In file included from test.c:2:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/stdlib.h:543:14: note: declared here
+  543 | extern void *calloc (size_t __nmemb, size_t __size)
+      |              ^~~~~~
+In file included from test.c:5:
+exercises.c:94:1: error: expected ‘,’ or ‘;’ before ‘}’ token
+   94 | }
+      | ^
+test.c:251:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  251 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:271:1: error: expected declaration or statement at end of input
+  271 | }
+      | ^
+In file included from test.c:5:
+exercises.c:88:11: error: unused variable ‘temp’ [-Werror=unused-variable]
+   88 |   Vector *temp = calloc(sizeof(n,sizeof(Vector));
+      |           ^~~~
+test.c:272: error: control reaches end of non-void function [-Werror=return-type]
+At top level:
+test.c:251:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  251 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+cd0ed19
